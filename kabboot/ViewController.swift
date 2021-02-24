@@ -16,9 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet var passwordView: UIView!
     @IBOutlet var confirmPasswordView: UIView!
     @IBOutlet var register: UIButton!
+    @IBOutlet var registerView: UIView!
+    @IBOutlet var loginView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         let rowsViews = [userNameView, phoneNumberView, emailView, passwordView, confirmPasswordView, register]
            
         for view in rowsViews {
@@ -29,10 +32,16 @@ class ViewController: UIViewController {
     @IBAction func registerClicked(_ sender: Any) {
         registerButton.isSelected = true
         loginButton.isSelected = false
+        
+        loginView.isHidden = true
+        registerView.isHidden = false
     }
     @IBAction func loginClicked(_ sender: Any) {
         registerButton.isSelected = false
         loginButton.isSelected = true
+        
+        registerView.isHidden = true
+        loginView.isHidden = false
     }
     
     @IBAction func register(_ sender: Any) {
