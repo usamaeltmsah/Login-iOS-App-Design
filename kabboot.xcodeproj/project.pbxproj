@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190516CA25E714E3005A9FF0 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190516C925E714E3005A9FF0 /* ForgotPassViewController.swift */; };
 		19F0B55F25E5A29800C90340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F0B55E25E5A29800C90340 /* AppDelegate.swift */; };
 		19F0B56125E5A29800C90340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F0B56025E5A29800C90340 /* SceneDelegate.swift */; };
 		19F0B56325E5A29800C90340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F0B56225E5A29800C90340 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190516C925E714E3005A9FF0 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		19F0B55B25E5A29800C90340 /* kabboot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kabboot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F0B55E25E5A29800C90340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F0B56025E5A29800C90340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				19F0B56025E5A29800C90340 /* SceneDelegate.swift */,
 				19F0B56225E5A29800C90340 /* ViewController.swift */,
 				19F0B56425E5A29800C90340 /* Main.storyboard */,
+				190516C925E714E3005A9FF0 /* ForgotPassViewController.swift */,
 				19F0B56725E5A29D00C90340 /* Assets.xcassets */,
 				19F0B57425E5A75F00C90340 /* colors.xml */,
 				19F0B56925E5A29D00C90340 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190516CA25E714E3005A9FF0 /* ForgotPassViewController.swift in Sources */,
 				19F0B56325E5A29800C90340 /* ViewController.swift in Sources */,
 				19F0B55F25E5A29800C90340 /* AppDelegate.swift in Sources */,
 				19F0B56125E5A29800C90340 /* SceneDelegate.swift in Sources */,

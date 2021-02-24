@@ -75,6 +75,11 @@ class ViewController: UIViewController {
             self.loginView.isHidden = false
         })
     }
+    @IBAction func forgotPasswordClicked(_ sender: Any) {
+        if let vc = storyboard?.instantiateViewController(identifier: "forgotPass") as? ForgotPassViewController {
+            present(vc, animated: true)
+        }
+    }
 }
 
 extension UIColor {
