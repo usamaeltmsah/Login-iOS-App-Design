@@ -19,10 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet var registerView: UIView!
     @IBOutlet var loginView: UIView!
     
+    @IBOutlet var loginPhoneNum: UIView!
+    @IBOutlet var loginPass: UIView!
+    @IBOutlet var loginButt: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        let rowsViews = [userNameView, phoneNumberView, emailView, passwordView, confirmPasswordView, register]
+        let rowsViews = [userNameView, phoneNumberView, emailView, passwordView, confirmPasswordView, register, loginPhoneNum, loginPass, loginButt]
            
         for view in rowsViews {
             view?.layer.cornerRadius = 20
@@ -33,18 +36,44 @@ class ViewController: UIViewController {
         registerButton.isSelected = true
         loginButton.isSelected = false
         
-        loginView.isHidden = true
-        registerView.isHidden = false
+        let transitionOptions: UIView.AnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
+        
+        UIView.transition(with: loginView, duration: 1.0, options: transitionOptions, animations: {
+            self.loginView.isHidden = true
+        })
+
+        UIView.transition(with: registerView, duration: 1.0, options: transitionOptions, animations: {
+            self.registerView.isHidden = false
+        })
     }
     @IBAction func loginClicked(_ sender: Any) {
         registerButton.isSelected = false
         loginButton.isSelected = true
         
-        registerView.isHidden = true
-        loginView.isHidden = false
+        let transitionOptions: UIView.AnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
+        
+        UIView.transition(with: registerView, duration: 1.0, options: transitionOptions, animations: {
+            self.registerView.isHidden = true
+        })
+
+        UIView.transition(with: loginView, duration: 1.0, options: transitionOptions, animations: {
+            self.loginView.isHidden = false
+        })
     }
     
     @IBAction func register(_ sender: Any) {
+    }
+    
+    func showCard() {
+        let transitionOptions: UIView.AnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
+        
+        UIView.transition(with: registerView, duration: 1.0, options: transitionOptions, animations: {
+            self.registerView.isHidden = true
+        })
+
+        UIView.transition(with: loginView, duration: 1.0, options: transitionOptions, animations: {
+            self.loginView.isHidden = false
+        })
     }
 }
 
